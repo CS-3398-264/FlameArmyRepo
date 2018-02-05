@@ -33,8 +33,21 @@ Also , meet these requirment listed from the Project +1 doc from tracs
 1.5	References
 
 2.	Overall Description
-2.1	Product Perspective
+2.1	Product Perspective 
+ Students sometimes need a bit of competition and entretainment to escape everyday stress. "A Game of Chess" 
+is intending to do just that, while also providing a free and user friendly experience. 
 2.2	Product Functions
+ *The system must fulfill these tasks.
+      .	A user interface (ASCII text is fine, sprites, html images, etc.).      
+      .	There must be at least ONE form of AI implementation (up to user and sophistication is not critical).      
+      .	There must be user input (again, can be from a command prompt, mouse click, etc.).      
+      .	The game must begin from the normal starting position 
+          and must complete when it has determined check mate.
+ *The system must let the user fulfill these tasks.
+      . The user must be able to restart game at any time desired. 
+      . The user must be able to select "chaos" mode shall he/she choose to. 
+      . The user must be able to input name to track highscore. 
+      
 2.3	User Classes and Characteristics
 2.4	Operating Environment
 2.5	Design and Implementation Constraints
