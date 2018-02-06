@@ -60,14 +60,26 @@ is intending to do just that, while also providing a free and user friendly expe
 3.3	Software Interfaces
 3.4	Communications Interfaces
 4.	System Features
-4.1	System Feature 1
+4.1	Chaos Chess Mode
 4.1.1	Description and Priority
+    The Chaos mode will randomize the pieces on both sides of the board giving each game a unique starting point. This 
+    will give an added challenge by changing the standard chess strategies.
 4.1.2	Stimulus/Response Sequences
 4.1.3	Functional Requirements
 
-REQ-1:	
-REQ-2:	
-4.2	System Feature 2 (and so on)
+4.2	Score Board
+4.2.1	Description and Priority
+    The score board will assign a score to each piece and accumulate points for each players based on what enemy pieces 
+    they have defeated.
+    
+4.3	Move History
+4.3.1	Description and Priority
+    The move history will keep track of the piece movments using the standard chess notation. 
+    
+4.4	Player Clock
+4.4.1	Description and Priority
+    only counts players time then they are playing. 2 modes – normal chess clock counting down time left and time used 
+    to show how fast the player is playing.
 
 5.	Other Nonfunctional Requirements
 5.1	Performance Requirements
