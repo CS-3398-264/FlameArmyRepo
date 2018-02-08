@@ -25,9 +25,9 @@ Also , meet these requirment listed from the Project +1 doc from tracs
 
 
 1.2	Document Conventions
-  
+  Bullet and Number lists where used to list certain requirements. Other than that, natural languange sentences were used. 
 1.3	Intended Audience and Reading Suggestions
-
+  
 1.4	Product Scope
 
 1.5	References
@@ -43,6 +43,8 @@ is intending to do just that, while also providing a free and user friendly expe
       .	There must be user input (again, can be from a command prompt, mouse click, etc.).      
       .	The game must begin from the normal starting position 
           and must complete when it has determined check mate.
+      . The system will keep track of all moves made in the current game in chess notation. 
+      . The system will also keep track of the score of the users that are playing. 
  *The system must let the user fulfill these tasks.
       . The user must be able to restart game at any time desired. 
       . The user must be able to select "chaos" mode shall he/she choose to. 
@@ -52,6 +54,8 @@ is intending to do just that, while also providing a free and user friendly expe
 2.4	Operating Environment
 2.5	Design and Implementation Constraints
 2.6	User Documentation
+ A webpage will be linked with the download file linking the user to any chess tutorial they might desire. For the system,
+ everything will be explained explicitly. 
 2.7	Assumptions and Dependencies
 
 3.	External Interface Requirements
@@ -70,7 +74,7 @@ is intending to do just that, while also providing a free and user friendly expe
 4.2	Score Board
 4.2.1	Description and Priority
     The score board will assign a score to each piece and accumulate points for each players based on what enemy pieces 
-    they have defeated.
+    they have defeated. Only the top 5 scores will be displayed and stored. 
     
 4.3	Move History
 4.3.1	Description and Priority
@@ -83,8 +87,13 @@ is intending to do just that, while also providing a free and user friendly expe
 
 5.	Other Nonfunctional Requirements
 5.1	Performance Requirements
+.	The game must begin from the normal starting position or chaos mode position 
+  and must complete when it has determined check mate.
 5.2	Safety Requirements
 5.3	Security Requirements
+ The users are adviced to use nicknames or only their first names when recording their high scores since 
+ their selected names will be being displayed to whoever gets to the scoreboard screen should they beat one 
+ of the top 5 scores. 
 5.4	Software Quality Attributes
 5.5	Business Rules
 6.	Other Requirements
