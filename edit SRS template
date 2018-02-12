@@ -1,5 +1,5 @@
  1.1	Purpose 
-  Using Java/HTML-5(need to discuss), "Created a Game of Chess" with:
+  Using Java/HTML-5(need to discuss),this program shall "Created a Game of Chess" with the following function:
                                       1. Correct Chess Rule 
                                       2. Correct Chess class
                                       3. Correct way to move different type of chess
@@ -12,7 +12,7 @@
                                      
                                     With Test Plan and Test Result, list of record-defects 
                                     
-Also , meet these requirment listed from the Project +1 doc from tracs
+Also , the project shall meet these requirment listed from the Project +1 doc from tracs
 
       1.	A user interface (ASCII text is fine, sprites, html images, etc.).      
       2.	There must be at least ONE form of AI implementation (up to user and sophistication is not critical).      
@@ -24,20 +24,47 @@ Also , meet these requirment listed from the Project +1 doc from tracs
           as they complete work (exceptions need to be run by me).
 
 
+P.S the Product from this project is developed by "___" with "______ edition"
+
 1.2	Document Conventions
-  Bullet and Number lists where used to list certain requirements. Other than that, natural languange sentences were used. 
+
+  Bullet point and Number lists where used to list certain requirements. Other than that, natural languange sentences were used.
+  the keyword "shall" will decribe certain requirnment the the project try to deliever and certain function that the Code try to perform.
+
 1.3	Intended Audience and Reading Suggestions
+  
+  The project shall be aavilable to read by following type of audience include:
+                                     
+                                     1. User (Professor Diaz and who will used the final edition)
+                                     2. Developers (Us the team FlameArmy)
+                                     3. Tester (Us the team FlameArmy)
+                                     4. Documntation writers (the Team FlameArmy)
+ 
+  The SRS will cointain Certain performance of the Product try to achieve and the detail will come with a labe "shall".
+  For Team FlameArmy. the following content will help the direction about developing the product
+  For User/Manager, the following will help to understand the performance and the limitation of the Product.
   
 1.4	Product Scope
 
-1.5	References
+ Purpose: the Product shall able to perform a complete experience of game of chess with an AI opponent.
+ relevant Benefit: set up a frame that help the developer to generate a more solid design flow for making the product.
+ Objective: to perform a complete game of chess by combine certain Class/Function which run sucessfully and comply together.
+ goal: let the product ablr for every user who has the supported version of the software/IDE to run the product sucessfully.
 
+1.5	References
+ 
+ Wikipekia: understand the rule of the chess in order to design Classes, Function 
+ AI: (Nityam's slack share link detail), in order to create a AI oppenent, by professor Diaz's premitation, 
+      we are allowed to use onlie resource instead of creating our own AI config.
+      
 2.	Overall Description
 2.1	Product Perspective 
+
  Students sometimes need a bit of competition and entretainment to escape everyday stress. "A Game of Chess" 
 is intending to do just that, while also providing a free and user friendly experience. 
+
 2.2	Product Functions
- *The system must fulfill these tasks.
+ *The system shall fulfill these tasks.
       .	A user interface (ASCII text is fine, sprites, html images, etc.).      
       .	There must be at least ONE form of AI implementation (up to user and sophistication is not critical).      
       .	There must be user input (again, can be from a command prompt, mouse click, etc.).      
@@ -51,26 +78,109 @@ is intending to do just that, while also providing a free and user friendly expe
       . The user must be able to input name to track highscore. 
       
 2.3	User Classes and Characteristics
-2.4	Operating Environment
-2.5	Design and Implementation Constraints
-2.6	User Documentation
- A webpage will be linked with the download file linking the user to any chess tutorial they might desire. For the system,
- everything will be explained explicitly. 
-2.7	Assumptions and Dependencies
+  For User Classes, User shall able to use the following Class to preform certain action:
+                    
+                    1. A Class that allow PLayer to move chess with the correct moving pattern
+                    2. A Class that allow PLayer to perform special move such as castling, promotion of Pawns(including to choose which type of promo)
+                    3. A Class that allow Player to interact with the chess pieces(drag/click)
+                    4. A Class that allow Player to surrender the game if they want to give up.
+                    5. A Class that allow Player to return to pervious stage of move.
+                    6. A Class that allow PLayer to check the move recorder
+             (Maybe)7. A Class that allow Player to see any "hit" or "avilable option of moves"
+             (Maybe)8. A Class that allow Player to choose White/Black side
 
+  
+  For Certain Class, User will not able to use with certain Class. However, those Classes are part of the basics of the product shall include:
+                    
+                    1. A Class that let the product able to perform the action that the chess will be taken off when it matches the rules.
+                    2. A Class that let the product to show Win/Lose message when Player(include AI) are out of moves.
+                    3. A Class that let the product to perform the animation/message of the decision of the moves that the User and AI choose.
+                    4. A Class that let the product to display a "Checkmate" message when User(include AI) hit a "Checkmate" situation
+             (Maybe)5. A Class that let the product to display a message if the version of the software is not supported.
+
+2.4	Operating Environment
+ 
+ The Operatin Environment will be HTML5 which allow the product support _______________________________
+ 
+
+2.5	Design and Implementation Constraints
+
+ There are Limitation shall be expected in the product.
+                    
+                    1. the product may not able to have an oppenent choosing option
+                    2. the product may not able to support PVP (at this point)
+                    3. the product may not include a Timer option
+                    4. the product may not able to able to allow player to select the difficultly
+                    5. the product may not able to allow player choose the outlook of the chess.
+                    6. the product may not able to allow player to save the move record.
+
+2.6	User Documentation
+
+ option 1:A webpage shall be linked with the download file linking the user to any chess tutorial they might desire. For the system,
+          everything will be explained explicitly. 
+ 
+ option 2: A tuttorial tab shall be show in the user interface to allow user to see the rules, how to play .etc
+ 
+ 
+2.7	Assumptions and Dependencies
+ 
+ There are some Assumption and Dependencies that we shall notice:
+ 
+ Dependencies: the AI we implant may cause conflict with our Class/Function design.
+               the rules we references limited the design of rules.
+ Assumptions:  - if the AI doesnt work, the product may not be able to function properly
+               - if some Class missed/changed without test , the product will not able to run sucessfully.
+               
+               
 3.	External Interface Requirements
 3.1	User Interfaces
+
+ 
 3.2	Hardware Interfaces
+
+  When User use the product, the Hardware shall able to:
+                      
+                      1. allow the product support the mouse click interaction(left/right click)
+                      2. use mouse to interact with all tab option (start the game, surrender...)
+                      3. use mouse to interact with the chess and the avilable places to move.
+                      4. use mouse to close the product.
+               (Maybe)5. use mouse to interact with the message such as surrender(start a new game/continue option on the surrender message)
+                      
 3.3	Software Interfaces
+  Develop language: HTML5
+  Develop IDE&ver : 
+  AI implant      :
+  
 3.4	Communications Interfaces
+
+ ???????? 
 4.	System Features
+4.0 Standard Mode
+4.0.1 High priority: - config the pieces labeled with the correct class
+                       benefit: allow the interaction run correctly alongside with the rule
+                     - config the the interaction between the hardware and the product
+                     - config the sepecial move is correct with the correct class
+      
+    Medium priority: - config the recorder record the correct move
+                     - display message
+    
+    Low priority   : - user manual design since you can look it up online?
+4.0.1	Description and Priority
+
+    The Standard mode shall display the pieces on both sides of the board giving each game by the standard setup from the references
+    
+4.0.2	Stimulus/Response Sequences
+
+4.0.3	Functional Requirements
+      If Player choose the wrong places to move the chess due to the "Rule" Class. it will not allow PLayer to perfrom certain move.
+      if Player interactwith the other side pieces, it will not show any interaction.
+              
 4.1	Chaos Chess Mode
 4.1.1	Description and Priority
+
     The Chaos mode will randomize the pieces on both sides of the board giving each game a unique starting point. This 
     will give an added challenge by changing the standard chess strategies.
-4.1.2	Stimulus/Response Sequences
-4.1.3	Functional Requirements
-
+    
 4.2	Score Board
 4.2.1	Description and Priority
     The score board will assign a score to each piece and accumulate points for each players based on what enemy pieces 
@@ -90,6 +200,7 @@ is intending to do just that, while also providing a free and user friendly expe
 .	The game must begin from the normal starting position or chaos mode position 
   and must complete when it has determined check mate.
 5.2	Safety Requirements
+ If the system is overload(if happen), the system will turn off automatically
 5.3	Security Requirements
  The users are adviced to use nicknames or only their first names when recording their high scores since 
  their selected names will be being displayed to whoever gets to the scoreboard screen should they beat one 
