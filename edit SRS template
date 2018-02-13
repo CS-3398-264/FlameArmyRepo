@@ -72,7 +72,7 @@ is intending to do just that, while also providing a free and user friendly expe
           and must complete when it has determined check mate.
       . The system will keep track of all moves made in the current game in chess notation. 
       . The system will also keep track of the score of the users that are playing. 
- *The system must let the user fulfill these tasks.
+ *The system shall let the user fulfill these tasks.
       . The user must be able to restart game at any time desired. 
       . The user must be able to select "chaos" mode shall he/she choose to. 
       . The user must be able to input name to track highscore. 
@@ -83,8 +83,8 @@ is intending to do just that, while also providing a free and user friendly expe
                     1. A Class that allow PLayer to move chess with the correct moving pattern
                     2. A Class that allow PLayer to perform special move such as castling, promotion of Pawns(including to choose which type of promo)
                     3. A Class that allow Player to interact with the chess pieces(drag/click)
-                    4. A Class that allow Player to surrender the game if they want to give up.
-                    5. A Class that allow Player to return to pervious stage of move.
+                    4. A Class that allow Player to surrender and restart the game if they want to give up.
+                    5. A Class that allow Player to Undo the move.
                     6. A Class that allow PLayer to check the move recorder
              (Maybe)7. A Class that allow Player to see any "hit" or "avilable option of moves"
              (Maybe)8. A Class that allow Player to choose White/Black side
@@ -135,6 +135,8 @@ is intending to do just that, while also providing a free and user friendly expe
 3.	External Interface Requirements
 3.1	User Interfaces
 
+ see picture name"chess game outl"
+
  
 3.2	Hardware Interfaces
 
@@ -153,12 +155,39 @@ is intending to do just that, while also providing a free and user friendly expe
   
 3.4	Communications Interfaces
 
+3.5 Text interaction Interfaces(Product logic desing test) 
+    By using chess notation, we display the notation (maybe grid by grid) of the game use input and output to perfrom the logic of the game and test the Class and Function are correct
+    an idea example: 
+                     game start!
+                     move: pawn1 // input
+                     move to : a5 // another input 
+                     display : cant move to ther cause "   " choose another move (Bool check)
+                     move: pawn 1 // input
+                     move to : a3 // input
+                     display: sucess, move pawn 1 to a3 // display move
+                     display: r k b K q b k r
+                              p p p p p p p p
+                              . . . . . . . .
+                              . . . . . . . .
+                              P . . . . . . .
+                              . P P P P P P P
+                              R K B Q K B K R
+                     
+                     
+                 
+    
+
+
+ 
+ 
+
  ???????? 
 4.	System Features
 4.0 Standard Mode
 4.0.1 High priority: - config the pieces labeled with the correct class
                        benefit: allow the interaction run correctly alongside with the rule
                      - config the the interaction between the hardware and the product
+                     - config the chesses represent the correct side
                      - config the sepecial move is correct with the correct class
       
     Medium priority: - config the recorder record the correct move
