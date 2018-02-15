@@ -25,7 +25,8 @@ Draft Type and Number	Full Name	Information about the revision. This table does 
 <This template serves as a basis for a Software Design Specification.  As in the SRS document, all italics refer to the "comment" style. Comments in blue are general and apply to any SDS, these that are in black are applicable specifically for this course. This template is based on the work by Karl. E Wiegers, Steve McConnel of CXOne group and the IEEE standards.>
  
 1.3 Introduction
-Purpose
+Purpose : create a complete chess game environment by creating working program with correct Functionality and interaction.
+
 System Overview
 
  System sturcture    : 
@@ -87,7 +88,7 @@ Document Overview :
                *. Save Game   : this component allow User to
                *. Timer : this compoent allow User to use the timer feature by clicking the timer button under speed competition
                *. Class Manager : this component regulate the special condition of certain move such as promo, castling(is this included?)
-               *. ScoreBoard : this component allow user to see the score of the game (show by points or chesses?)
+               *. ScoreBoard : this component allow user to see the number of game that user win 
                *. Undo: this component allow user to reverse a step. the game will display the pervious record (Grammar TT)
                *. Surrender : this component allow User to stop the game with a "surrender" message displayed.
                *. Restart : this component allow User to get a option to interact with the restart button
