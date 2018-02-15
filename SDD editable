@@ -27,21 +27,85 @@ Draft Type and Number	Full Name	Information about the revision. This table does 
 1.3 Introduction
 Purpose
 System Overview
-<Brief high-level description of system structure, functionality, interactions with external systems, system issues, etc.
-Definitions, Acronyms and Abbreviations
-< List any project definitions and acronyms introduced to the project by this design. 
-Supporting Materials
-<Note any references or related materials here.
-Document Overview
+
+ System sturcture    : 
+ Functionality       : - Move Chess pieces (moving pattern of each type of chess)
+                       - Special Move (Castling . etc)
+                       
+ Interactions        : 
+ with external system  - with mouse:- drag and place chess pieces
+                                    - click tab (surrender, check scoreboard, Undo)
+                                    - click timer
+                                    
+                       - with keyboard: - enter user name
+                       
+                       - with monitor : - display the game include text notification, scoreboard, Win/Lose 
+                                   
+
+ 
+ Sysyem Issues       : - (anything goes wrong?)
+   eg                  - the mouse does not interact with the object
+ 
+
+Definitions,         : - .................
+Acronyms 
+and Abbreviations
+
+Supporting Materials : - Minimax AI for oppenent
+                       - Wikipedia  for the standard rule of chess 
+                       -
+                       
+
+Document Overview :
 
 2 Architecture
 <The architecture provides the top level design view of a system and provides a basis for more detailed design work. This is the section where you should include your High-Level design Com-ponent Diagram.
 2.1 Overview
+
 <This section provides a high level overview of the structural and functional decomposition of the system. Focus on how and why the system was decomposed in a particular way rather than on details of the particular components. Include information on the major responsibilities and roles that the system (or portions of it) must play.
 2.2 Component 1..n
 <Describe an element (subsystem, component, etc...) from architecture in further detail. When appropriate, include information on how the element is further broken down and the interactions and relationships between these subcomponents.
+ 
+ *. Piece : this component allow User to use all chess pieces with the correct label
+             and logic(rule) to perfrom the task that fit the standard chess game 
+            this component include the following element with logic desgin :(Black and white)
+                                                           King    :logic of moving pattern
+                                                           Queen   :logic of moving pattern
+                                                           Bishop  :logic of moving pattern
+                                                           Knight  :logic of moving pattern
+                                                           Rock    :logic of moving pattern
+                                                           Pawn    :logic of moving pattern
+                                                                    logic of checking the condition of getting promotion
+                                                                    logic of promoing the pawn which satisfy the condition
+                                                           
+ *. Chess Board : this component allow all chess pieces display in standard chess game layout;
+                  Also, this componet allow all chess pieces moved on the designed area and prevent certain bug
+ 
+ *. Button: this component include multiple of components which are interactive button serve by certain function for different use
+  ^
+  |
+               *. Save Game   : this component allow User to
+               *. Timer
+               *. Class Manager
+               *. ScoreBoard
+               *. Undo
+               *. Surrender
+               *. Restart
+               *. SavedGame : this component allow User to Save the current status(pieces position and score) 
+                              and Load it again by User' wish
+               *. MoveNotation : this component allow User to check the move record of current/ specific game 9??)
+               *.  etc
+ 
+ *. Mouse click : this component allow User to interact with Chess pieces by (click and drag) to play the game
+ *. move: this componet associate with chess and mouse click, when a mouse click on a mouse and place it to the right place, 
+          the piece will "move" to that specific place on board.
+ *. Check/Checkmate : this component allow User to get notice about certain staus of the game
+ 
+ *. Restart: this component allow User to get a option to interact with the restart tab
+ *. 
 
 3 High-Level Design
+
 <This section describes in further detail elements discussed in the Architecture. Normally this section would be split into separate documents for different areas of the design. 
 High-level designs are most effective if they attempt to model groups of system elements from a number of different views.
 3.1 View / Model Component 1..n
