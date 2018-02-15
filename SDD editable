@@ -85,12 +85,12 @@ Document Overview :
   ^
   |
                *. Save Game   : this component allow User to
-               *. Timer
-               *. Class Manager
-               *. ScoreBoard
-               *. Undo
-               *. Surrender
-               *. Restart
+               *. Timer : this compoent allow User to use the timer feature by clicking the timer button under speed competition
+               *. Class Manager : this component regulate the special condition of certain move such as promo, castling(is this included?)
+               *. ScoreBoard : this component allow user to see the score of the game (show by points or chesses?)
+               *. Undo: this component allow user to reverse a step. the game will display the pervious record (Grammar TT)
+               *. Surrender : this component allow User to stop the game with a "surrender" message displayed.
+               *. Restart : this component allow User to get a option to interact with the restart button
                *. SavedGame : this component allow User to Save the current status(pieces position and score) 
                               and Load it again by User' wish
                *. MoveNotation : this component allow User to check the move record of current/ specific game 9??)
@@ -101,9 +101,6 @@ Document Overview :
           the piece will "move" to that specific place on board.
  *. Check/Checkmate : this component allow User to get notice about certain staus of the game
  
- *. Restart: this component allow User to get a option to interact with the restart tab
- *. 
-
 3 High-Level Design
 
 <This section describes in further detail elements discussed in the Architecture. Normally this section would be split into separate documents for different areas of the design. 
