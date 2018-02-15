@@ -68,7 +68,7 @@ Document Overview :
  
  *. Piece : this component allow User to use all chess pieces with the correct label
              and logic(rule) to perfrom the task that fit the standard chess game 
-            this component include the following element with logic desgin :(Black and white)
+            this component include the following element with logic desgin :(Label in Black, white)
                                                            King    :logic of moving pattern
                                                            Queen   :logic of moving pattern
                                                            Bishop  :logic of moving pattern
@@ -96,10 +96,20 @@ Document Overview :
                *. MoveNotation : this component allow User to check the move record of current/ specific game 9??)
                *.  etc
  
- *. Mouse click : this component allow User to interact with Chess pieces by (click and drag) to play the game
- *. move: this componet associate with chess and mouse click, when a mouse click on a mouse and place it to the right place, 
+ *. Mouse click : this component allow User to interact with Chess pieces by (click and drag) to play the game with hardware (mouse).
+ 
+ *. Move: this componet associate with chess and mouse click, when a mouse click on a mouse and place it to the right place, 
           the piece will "move" to that specific place on board.
- *. Check/Checkmate : this component allow User to get notice about certain staus of the game
+          
+ *. Check/Checkmate : this component allow User to get notice about certain staus of the game (by display a message?)
+                      the conditition of Check, when "King" is about to be taken
+                      the condition of Checkmate, when "King" is about to be taken while the play have zero option to defend the king.
+                      
+ *. pieces taken : this componetn allow `Chessmate` to display the result when certain pieces get taken off.
+ 
+
+P.S. (How to check the condition of check?)
+          
  
 3 High-Level Design
 
