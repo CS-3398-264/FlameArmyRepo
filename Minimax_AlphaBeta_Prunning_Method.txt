@@ -1,0 +1,6 @@
+
+Minimax with Alpha Beta Pruning method:
+
+http://web.cs.ucla.edu/~rosen/161/notes/alphabeta.html
+
+https://www.youtube.com/watch?v=zp3VMe0Jpf8
