@@ -1,27 +1,26 @@
-package chessPack;
+//Pieces moves and methods
 
-public abstract class Piece 
+package Pieces;
+import Game.Player;
+import Game.Type;
+public abstract class Piece
 {
-	private boolean taken;
-	private String image;
-	
-
-	
-	public Piece(boolean taken2, String image2) {
-		// TODO Auto-generated constructor stub
-		taken = taken2;
-		image = image2;
-	}
-
-	public void setTaken(boolean taken)
-	{
-		this.taken = taken;
-	}
-	
-	public void setImage(String image)
-	{
-		this.image = image;
-	}
-	
-	
+  public int x;
+  public int y;
+  public Player player;
+  
+  public Piece(int x, int y, Player player)
+  {
+    this.x = x;
+    this.y = y;
+    this.player = player;
+    playermyGame.gameBoard.boardArray[x][y] = this;
+  }
+  
+  public abstract boolean isValidPath(int paramInt1, int paramInt2);
+  
+  public abstract int[][] drawPath(int paramInt1, int paramInt2, int paramInt3, int paramInt4);
+  
+  public abstract Type getType();
 }
+
