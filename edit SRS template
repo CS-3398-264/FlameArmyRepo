@@ -1,137 +1,130 @@
  1.1	Purpose
- The purpose of this document is to present a detailed description of a chess game called ChessMate. It will explain the freatures
- of the system, the interface of the system, and how the system will interact with the end user
+ The purpose of this document is to present a detailed description of a chess game called ChessMate. It will explain the features
+ of the system, the interface of the system, and how the system will interact with the end user.
 
 1.2	Glossary
  ChessMate: Name of the game.
  King:	The main piece of the game, checkmating this piece is the object of the game. It can move 1 space in any direction.
- Queen:	This piece can move in any number of spaces in any direction as long as no other piece is in its way.
- Knight:	This piece can move 1 space vertically and 2 spaces horizontally or 2 spaces vertically and 1 space horizontally.
+ Queen:	This piece can move in any number of spaces in any direction as long as no other piece are in its way.
+ Knight:	This piece can move 1 space vertically, 2 spaces horizontally, 2 spaces vertically and 1 space horizontally.
         This piece looks like a horse. This piece can also jump over other pieces. 
- Rook:	one of two pieces of the same color that may be moved any number squares horizontally or vertically, as long as no
+ Rook:	Four pieces on the board (2 per team), that may be moved any number squares horizontally or vertically, as long as no
        other piece blocks its way.
- Pawn:	One of eight men of one color and of the lowest value usually moved one square at a time vertically and capturing diagonally.
- Bishop:	one of two pieces of the same color that may be moved any number squares diagonally, as long as no other piece blocks its way. 
+ Pawn:	Eight pieces per team and consequnetly the piece with the lowest capture value, usually moved one square at a time vertically and capturing diagonally, although it can move
+ 2 spaces vertically if it is its first move.
+ Bishop:	2 pieces per team that may be moved any number squares diagonally, as long as no other piece blocks its way. 
        One piece always remains on White squares and the other always on Black.
- Chess Board:	A board you need to play Chess. Have 64 black and white square.
- Chess:	A game played by 2 people on a chessboard with 16 pieces each.
- En Passant:	a method by which a pawn that is moved two squares can be captured by an opponent's pawn commanding the square that
+ Chess Board:	A board you need to play Chess. Have 64 black and white squares.
+ Chess:	A game that consists of two teams on a chessboard with 16 pieces each.
+ En Passant:	This is a method by which a pawn that is moved two squares can be captured by an opponent's pawn commanding the square that
            was passed
  Castling:	to move the king two squares horizontally and bring the appropriate rook to the square the king has passed over.
  Check:	To make a move that puts the opponents King under direct attack.
- Checkmate:	a situation in which an opponent’s king is in check and it cannot avoid being captured. This then brings the game
+ Checkmate:	This is a situation in which an opponent’s king is in check and it cannot avoid being captured. This then brings the game
            to a victorious result.
- Player: or User	A user or a player will be the person that is playing the chess game.
+ Player/User:	A user or a player will be the entity that is playing the chess game.
  Stalemate:	A situation in which a player’s king is not in check, but that player can make no move. This then results is a
           stalemate, which is a draw.
 
 
 
  The product shall be able to deliver a complete experience of a game of chess with an AI opponent or
- with another player on the same computer system. The game will allow the user to control chess pieces in two different
- mouse or user input. The end goal is to allow an experience chess player to practice certain strategies
- and not intended for a competitive setting.
+ with another player on the same computer system. The game will allow the user to control chess pieces in two different forms,
+ mouse or user input. The end goal is to allow an experienced chess player to practice certain strategies and move possibilities,
+ it is not intended for a competitive setting.
 
 
 1.3	Intended Audience and Reading Suggestions
   
-  The project shall be availe to the following audience:
+  The project shall be available to the following audience:
                                      
-                                     1. User (Professor Diaz and who will used the final edition)
-                                     2. Developers (Us the team FlameArmy)
-                                     3. Tester (Us the team FlameArmy)
-                                     4. Documntation writers (the Team FlameArmy)
+                                     1. User (Professor Diaz and who will use the final edition)
+                                     2. Developers (Team FlameArmy)
+                                     3. Tester (Team FlameArmy)
+                                     4. Documntation writers (Team FlameArmy)
  
  
  1.4	Document Conventions
 
-  Bullet point and number lists where used to list certain requirements. Other than that, natural languange sentences were used.
-  the keyword "shall" will decribe certain requirement the project will deliever and the code will performe.
+  Bullet points and number lists where used to list certain requirements. Other than that, natural languange sentences were used.
+  the keyword "shall" will decribe certain requirements the project will deliever. 
 
 1.5	References
  
- Wikipekia: understand the rule of the chess in order to design Classes, Function 
+ Wikipekia: Understanding the rules of chess in order to design Classes, and Functions. 
  AI: (Nityam's slack share link detail), in order to create a AI oppenent, by professor Diaz's premitation, 
-      we are allowed to use onlie resource instead of creating our own AI config.
+      we are allowed to use online resources instead of creating our own AI configuration.
       
 1.6	Product Perspective 
-ChaseMate will be the first version of a chess game design. It is intented to work as a stand alone system. 
+ChessMate will be the first version of a chess game design. It is intented to work as a stand alone system. 
 
 
 1.7	Product Functions
 
-This program shall contain the following function:
-                                      1. Diplay the chest rules pertaining to this system.
+This program shall contain the following functions:
+                                      1. Diplay the chess rules pertaining to this system.
                                       2. Move pieces using mouse or user input.
                                       4. Allow the user to play against an AI.
-                                      5. Allow the user to see the score board.
+                                      5. Allow the user to see the scoreboard.
                                       6. Give the user an option to play chess under the constrain of a timer. 
                                       8. Allow the user to see the move log of a game. 
-                                      9. Able to detemine the winning situitation.
-                                     10. The user shall be able to restart the game at any time.
-                                     11. The user shall be able to select "Chaos" mode.
-                                     12. The user shall be alble to input name to track highscore
+                                      9. Able to detemine checkmate correctly.
+                                     10. Allow the user to restart the game at any time.
+                                     11. Allow the user to input name to track highscore on scoreboard.
     
                                     
 The program shall meet the following requirements
 
       1.	A user interface (ASCII text is fine, sprites, html images, etc.).      
-      2.	There must be at least ONE form of AI implementation (up to user and sophistication is not critical).      
-      3.	There must be user input (again, can be from a command prompt, mouse click, etc.).      
-      4.	The game must begin from the normal starting position 
-          and must complete when it has determined check mate.
+      2.	There must be at least ONE form of AI implementation       
+      3.	There must be user input      
+      4.	The game must begin from the normal starting position and must complete when it has determined check mate.
       5.	You MAY use libraries/APIs, but you MAY NOT copy code.      
-      6.	All documentation and code must be pushed to GitHub by everyone 
-          as they complete work (exceptions need to be run by me).
+      6.	All documentation and code must be pushed to GitHub by everyone as they complete work.
 
 
 1.8	User Classes and Characteristics
-  Intermideate Chess Player: The user must be an experience chess player. The user must know how to play
-  chess before attempting to play the game since it will not provide user hints to making moves
+  Intermideate Chess Player: The user must be an experienced chess player. The user must know how to play
+  chess before attempting to play the game since it will not provide the user hints to making moves.
   
 1.9	Operating Environment
-   The game will operate on windows 7 or higher version. 
+   The game will operate on windows 7 or higher version.
 
 
 2.0	User Documentation
 
- option 1:A webpage shall be linked with the download file linking the user to any chess tutorial they might desire. For the system,
-          everything will be explained explicitly. 
- 
- option 2: A tutorial tab shall be show in the user interface to allow user to see the rules, how to play .etc
+ A button will be available to show the rules for any piece the user decides to check, including the moves it can make.
  
                
 External Interface Requirements
 
 2.1	User Interfaces
 
-The chess boar will be black and while. Each piece will have the same color of it's corresponding side.
+The chess board will be black and while. Each piece will have the same color of it's corresponding team, either black or white.
 Any errors that the user makes will be displayed in a text field containing the error summary. If the user
-does the same error twice, a pop up screen will be displayed to acknowledge. Every other feature such as but
-not limited to buttons, timer and any other features will have a green color display.
+does the same error twice, a pop up screen will be displayed for the user to acknowledge.
 
  
 2.5	Hardware Interfaces
 
-  When User use the product, the Hardware shall able to:
+  When the User is utilizing the product, the Hardware shall able to:
                       
-                      1. allow the product support the mouse click interaction(left/right click)
-                      2. use mouse to interact with all tab option (start the game, surrender...)
+                      1. allow the game to support mouse click interaction(left/right click)
+                      2. use mouse to interact with all tab options (start the game, surrender...)
                       3. use mouse to interact with the chess and the avilable places to move.
-                      4. use mouse to close the product.
+                      4. use mouse to close the game.
                (Maybe)5. use mouse to interact with the message such as surrender(start a new game/continue option on the surrender message)
                       
 2.6	Software Interfaces
-  Develop language: HTML5
-  Develop IDE&ver : 
-  AI implant      :
+  Developing language: Java.
   
 2.7	Communications Interfaces
     No communication interfaces will be necessary since the player will be playing against an AI
     or a player in the same system.
 
 2.8 Text interaction Interfaces(Product logic desing test) 
-    By using chess notation, we display the notation (maybe grid by grid) of the game use input and output to perfrom the logic of the game and test the Class and Function are correct
+    By using chess notation, we display the notation (maybe grid by grid) of the game user input and output to perfrom the 
+    logic of the game and test that the classes and functions are correct.
     an idea example: 
                      game start!
                      move: pawn1 // input
@@ -159,18 +152,18 @@ not limited to buttons, timer and any other features will have a green color dis
 System Features
 
 3.1	Functional Requirements
-      If Player choose the wrong places to move the chess due to the "Rule" Class. it will not allow PLayer to perfrom certain move.
-      if Player interactwith the other side pieces, it will not show any interaction.
+      If Player chooses the wrong place to move the piece, due to the "Rule" Class, it will not allow PLayer to perfrom such certain move.
+      if Player interacts with the other side pieces, it will not show any interaction.
               
 3.2	Chaos Chess Mode
-3.2.1  This feature makes the board pieces spawn at the start of the game in a randomize fashion.
+3.2.1  This feature makes the board pieces spawn at the start of the game in a random fashion.
        Each pieace such as the King could potentialy appear in a check position. 
        
 3.2.2 The user will be given the option to play again an AI or a Player. After the player chooses 
       his opponent, the player will be given the option to play in either normal or chaos mode.
     
 3.3	Score Board
-3.3.1 This feature allows the user to see the scoreboard record in win to loss ratio fashion
+3.3.1 This feature allows the user to see the scoreboard record in win to loss ratio fashion. Only the top 5 are recorded.
 3.3.2
     The user in the main menu can choose to see the record.
    
@@ -178,18 +171,18 @@ System Features
 3.4	Move History
     The move history will keep track of the piece movments using the standard chess notation. 
 3.4.1
-    The player can view a complete movie history by choosing "View Game History"
+    The player can view a complete move history by choosing "View Move History"
     In addition the player can view moves done by clicking a button "View Movies" while playing the
     game.
     
-3.5	Speed Chest
-    only counts players time then they are playing. 2 modes – normal chess clock counting down time left and time used 
+3.5	Speed Chess
+    Only counts players time when they are playing. 2 modes – normal chess clock counting down time left and time used 
     to show how fast the player is playing.
-3.5.1The player will be given the choice int he main menue to choose what time of time he or she
-      wishes to play.
+3.5.1T he player will be given the choice in the main menu to choose what type of timer he or she
+      wishes to use.
       
 3.6  Restart Game
-     The user can restart the game at anytime, which will no save any stats from the current game.
+     The user can restart the game at anytime, which will not save any stats from the current game.
      
  3.6.1  The user can choose to press the "Restart Button" while playing the game. It will be located
         int he top-mid screen.
@@ -199,10 +192,9 @@ System Features
        The player can choose by going to the setting tab on the top-left of the main menu.
 
 4.0	Safety Requirements
- If the system is overload(if happen), the system will turn off automatically
+ If the system is overloaded, the system will turn off automatically.
 4.1	Security Requirements
  The users are adviced to use nicknames or only their first names when recording their high scores since 
  their selected names will be being displayed to whoever gets to the scoreboard screen should they beat one 
  of the top 5 scores. 
-4.2	Software Quality Attributes
  
