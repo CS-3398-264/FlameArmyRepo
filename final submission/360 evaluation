@@ -3,18 +3,29 @@
 during SRS and SDD, we dont really get benefit from it because it is challenging that everyone coordinating every class into 1 package.
 moreover, the SRS and SDD also increse the cost of time to make the product. it may be more unorganized as for a relatively easy project.
 
-we believe that the waterfall process has to be very prepared at the begining and have a more restricted schedule. We do experience that
-the downside of the waterfall process since we have connection issues among the team. that delay the schedule a lot. 
+We believe that the waterfall process has to be very prepared at the begining and have a more restricted schedule. We do experience that
+the downside of the waterfall process since we have connection issues among the team. that delay the schedule a lot. thus we think that we need
+more monitoring either from the team or individual in order to keep everything on schedule.
 
 For Submition purpose, certain teammate upload the entire part of project such as SRS SDD. to see the contribution, 
 check: for SRS
             edit SRS template 
        for SDD
              editable for SDD
-       StatechartDiagramCHESS.png
-       StatechartDiagram2.0.png
-       Paint-Class-Diagram.png
+            StatechartDiagramCHESS.png
+            StatechartDiagram2.0.png
+            Paint-Class-Diagram.png
        
        for coding:
+            ChessMateApp.java
+            ChessTimer.java
+            Chessboard.java
+            Bishop.java
+            King.java
+            Knight.java
+            Pawn.java
+            Piece.java
+            Queen.java
+            Rook.java
        for test plan:
              Test Plan for ChessMate..docx (we do it on word together )
