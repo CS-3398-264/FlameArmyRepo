@@ -8,5 +8,9 @@ public class Queen extends Piece {
 		// TODO Auto-generated constructor stub
 		moveType = "Queen";
 	}
-
+	
+	public String rtnMoveType()
+	{
+		return moveType;
+	}
 }
