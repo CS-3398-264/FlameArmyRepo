@@ -10,7 +10,8 @@ that everyone can agree on. We did realize the downsides of the waterfall proces
 throughout the project among the team that delayed the process greatly. Thus we conclude that we need more monitoring and attention either 
 from the team or the individual responsible for the monitoring in order to keep everything on schedule.
 
-For Submition purpose, certain teammate upload the entire part of project such as SRS SDD. to see the contribution, 
+For Submition purpose, certain teammate upload the entire part of project such as SRS SDD, Code, and TestPaln. 
+To see the contributions, please check main branch where all files are located.  
 check: for SRS
             edit SRS template 
        for SDD
@@ -31,4 +32,4 @@ check: for SRS
             Queen.java
             Rook.java
        for test plan:
-             Test Plan for ChessMate..docx (we do it on word together )
+             Test Plan for ChessMate.docx
