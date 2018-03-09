@@ -18,4 +18,13 @@ public class Pawn extends Piece
 		promoted = status;
 	}
 	
+	public boolean rtnPromotion()
+	{
+		return promoted;
+	}
+	
+	public String rtnPawnMove()
+	{
+		return moveType;
+	}
 }
