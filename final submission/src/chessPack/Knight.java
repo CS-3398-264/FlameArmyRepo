@@ -9,5 +9,9 @@ public class Knight extends Piece {
 		// TODO Auto-generated constructor stub
 		moveType = "Knight";
 	}
-
+	
+	public String rtnKnightMoveType()
+	{
+		return moveType;
+	}
 }
