@@ -23,5 +23,11 @@ public abstract class Piece
 		this.image = image;
 	}
 	
+	public String rtnImage()
+	{
+		return image;
+	}
+	
 	
 }
+
