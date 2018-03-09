@@ -10,5 +10,11 @@ public class Bishop extends Piece{
 		
 		moveType = "Bishop";
 	}
+	
+	public String rtnMoveType()
+	{
+		return moveType;
+	}
+	
 
 }
