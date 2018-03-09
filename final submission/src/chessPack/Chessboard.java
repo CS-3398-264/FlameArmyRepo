@@ -1,6 +1,8 @@
 package chessPack;
+import java.*;
 
 import java.awt.*;
+import java.io.*;
 import java.awt.event.*;
 import java.util.*;
 import javax.swing.*;
@@ -9,6 +11,7 @@ public class Chessboard extends JPanel
 {
 	private JPanel chessBoard;
 	Dimension size = new Dimension(600, 600);
+	private ArrayList<Pawn> myPawns = new ArrayList();
 	
 	public Chessboard()
 	{
@@ -28,4 +31,10 @@ public class Chessboard extends JPanel
 			  }
 	}
 	
+	public int arraySize()
+	{
+		return myPawns.size();
+	}
+	
 }
+
