@@ -10,4 +10,8 @@ public class Rook extends Piece{
 		String moveType = "Rook";
 	}
 
+	public String rtnMoveType()
+	{
+		return moveType;
+	}
 }
